@@ -1,0 +1,23 @@
+“Your Dream Holiday Cottage” is a web application that will allow users to combine their interest in real property with local weather patterns and proximity to self-identified points of interest. 
+
+Users will provide specific input (via HTML forms) that will allow them to narrow preferences in these three areas. Types of input allowed may include:   
+1. Real property: geographic location; maximum list price; age of property
+2. Weather: amount of yearly rainfall; average temperatures over a period of time
+3. Points of interest: favorite restaurants; desired recreational opportunities; nearest volunteer opportunities (e.g., animal sanctuaries) 
+
+The generated result will be a list of properties that fit the criteria identified by users through the provided input fields. These properties will be the “dream holiday cottages” we all wish we were financially prepared to purchase. 
+
+This application will be geographically specific to the United Kingdom; as such, users who search for properties outside of the UK will find that the application fails and will receive a message stating the reason.  
+
+“Your Dream Holiday Cottage” will use the following technologies: 
+1. HTML/CSS/Bootstrap - for basic web design;
+2. Javascript - to perform the dynamic tasks needed; 
+3. jQuery - to enable more succinct coding for document manipulation and event handling; 
+4. JSON - to allow for the storage of acquired data in an easily accessible format; and
+5. Ajax - for communicating with APIs in data acquisition and to update the webpage without having to reload. 
+
+APIs identified for use in this application are Zoopla (real estate data), Met Office Datapoint (weather data), and Google Maps (for user-specified points of interest). 
+
+Application features will include photos of properties and the ranking of output by user-chosen parameters. Additionally, a unique selling point will be the presentation of weather data aligned with property details. Also, the site will have really pretty colors but will avoid the use of parallax scrolling. ;-)
+
+

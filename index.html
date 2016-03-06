@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Dream Holiday Cottage</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="cottage.css" media="screen" />
+
+  </head>
+
+<body>
+ <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+        	<div class= "thumbnail text-center">
+         		<img src= "holiday-cottage.jpg" id = "cottageimg" alt="cottage picture" style="height: 500px;"/>
+
+         			<div class = "caption">
+         				<h1>My Dream Holiday Cottage</h1>
+         				<form class="form-inline" style="margin-top:250px;">
+    							<div class="form-group" >
+      							<label for="InputMinPrice"></label>
+      							<input type="text" class="form-control" id="InputMinPrice" placeholder="Min Price (£)" >
+    							</div>
+    							<div class="form-group">
+      							<label for="InputMaxPrice"></label>
+      							<input type="text" class="form-control" id="InputMaxPrice" placeholder="Max Price (£)" >
+   							  </div>
+   							  <div class="form-group">
+      							<label for="InputLocation"></label>
+      							<!-- <input type="select"> -->
+                    <select name="Counties" class="form-control" id="InputLocation">
+                      <optgroup label= "England">
+                          <option>England</option>
+                          <option>Bedfordshire</option>
+                          <option>Berkshire</option>
+                          <option>Bristol</option>
+                          <option>Buckinghamshire</option>
+                          <option>Cambridgeshire</option>
+                          <option>Cheshire</option>
+                          <option>City of London</option>
+                          <option>Cornwall</option>
+                          <option>Cumbria</option>
+                          <option>Derbyshire</option>
+                          <option>Devon</option>
+                          <option>Dorset</option>
+                          <option>Durham</option>
+                          <option>East Riding of Yorkshire</option>
+                          <option>East Sussex</option>
+                          <option>Essex</option>
+                          <option>Gloucestershire</option>
+                          <option>Greater London</option>
+                          <option>Greater Manchester</option>
+                          <option>Hampshire</option>
+                          <option>Herefordshire</option>
+                          <option>Hertfordshire</option>
+                          <option>Isle of Wight</option>
+                          <option>Kent</option>
+                          <option>Lancashire</option>
+                          <option>Leicestershire</option>
+                          <option>Lincolnshire</option>
+                          <option>Merseyside</option>
+                          <option>Norfolk</option>
+                          <option>North Yorkshire</option>
+                          <option>Northamptonshire</option>
+                          <option>Northumberland</option>
+                          <option>Nottinghamshire</option>
+                          <option>Oxfordshire</option>
+                          <option>Rutland</option>
+                          <option>Shropshire</option>
+                          <option>Somerset</option>
+                          <option>South Yorkshire</option>
+                          <option>Staffordshire</option>
+                          <option>Suffolk</option>
+                          <option>Surrey</option>
+                          <option>Tyne and Wear</option>
+                          <option>Warwickshire</option>
+                          <option>West Midlands</option>
+                          <option>West Sussex</option>
+                          <option>West Yorkshire</option>
+                          <option>Wiltshire</option>
+                          <option>Worcestershire</option>
+                      </optgroup>
+                       <optgroup label="Scotland">
+                          <option>Scotland</option>
+                          <option>Aberdeenshire</option>
+                          <option>Angus</option>
+                          <option>Argyllshire</option>
+                          <option>Ayrshire</option>
+                          <option>Banffshire</option>
+                          <option>Berwickshire</option>
+                          <option>Buteshire</option>
+                          <option>Cromartyshire</option>
+                          <option>Caithness</option>
+                          <option>Clackmannanshire</option>
+                          <option>Dumfriesshire</option>
+                          <option>Dunbartonshire</option>
+                          <option>East Lothian</option>
+                          <option>Fife</option>
+                          <option>Inverness-shire</option>
+                          <option>Kincardineshire</option>
+                          <option>Kinross</option>
+                          <option>Kirkcudbrightshire</option>
+                          <option>Lanarkshire</option>
+                          <option>Midlothian</option>
+                          <option>Morayshire</option>
+                          <option>Nairnshire</option>
+                          <option>Orkney</option>
+                          <option>Peeblesshire</option>
+                          <option>Perthshire</option>
+                          <option>Renfrewshire</option>
+                          <option>Ross-shire</option>
+                          <option>Roxburghshire</option>
+                          <option>Selkirkshire</option>
+                          <option>Shetland</option>
+                          <option>Stirlingshire</option>
+                          <option>Sutherland</option>
+                          <option>West Lothian</option>
+                          <option>Wigtownshire</option>
+                      </optgroup>
+                      <optgroup label="Wales">
+                          <option>Wales</option>
+                          <option>Anglesey</option>
+                          <option>Brecknockshire</option>
+                          <option>Caernarfonshire</option>
+                          <option>Carmarthenshire</option>
+                          <option>Cardiganshire</option>
+                          <option>Denbighshire</option>
+                          <option>Flintshire</option>
+                          <option>Glamorgan</option>
+                          <option>Merioneth</option>
+                          <option>Monmouthshire</option>
+                          <option>Montgomeryshire</option>
+                          <option>Pembrokeshire</option>
+                          <option>Radnorshire</option>
+                      </optgroup>
+                      </select>
+    						  </div>	
+                 <!--  <br />
+                  <br />
+                  <div class="form-group">
+                      <label for="LocalDest1"></label>
+                      <input type="text" class="form-control" id="LocalDest1" placeholder="Destination - soon!">
+                    </div>
+                    <div class="form-group">
+                      <label for="LocalDest2"></label>
+                      <input type="text" class="form-control" id="LocalDest2" placeholder="Destination - soon!">
+                    </div>
+                    <div class="form-group">
+                      <label for="LocalDest3"></label>
+                      <input type="text" class="form-control" id="LocalDest3" placeholder="Destination - soon!">
+                    </div> -->
+ 						   </form>
+              </div>
+
+ 					    <!-- <div>
+     						<form class="form-inline" style="margin-bottom: 20px; margin-top: -120px;">
+      							<div class="form-group">
+        							<label for="InputRainfallMax">Max Rainfall</label>
+        							<input type="text" class="form-control" id="InputRainfallMax" placeholder="in inches">
+      							</div>
+      							<div class="form-group">
+        							<label for="InputSunnyDays">Sunny Days</label>
+        							<input type="text" class="form-control" id="InputSunnyDays" placeholder="per  year">
+     							  </div>
+                    <div class="form-group">
+                      <label for="InputPostcode">Postcode</label>
+                      <input type="text" class="form-control" id="InputPostcode" placeholder="Gu5 0AT">
+                    </div>
+     						</form>
+         	    </div> -->
+
+       				<div class = "bar">
+       					<p class = "textbar">Find Your Cottage!  <button type="submit" class="btn btn-default">Submit</button></p>
+    					</div>
+    		</div>
+      	</div>
+      </div>	
+      <div id="spinner">
+          <img id="spinner-img" src="ajax-loader.gif" alt="Loading..."/>
+      </div>
+ <div class="row text-center" id="glypharea" style="margin-top:100px; margin-left:100px; margin-right:100px;">
+        <div class= "col-md-6" style="margin-top: 50px;">
+          <i class="glyphicon glyphicon-home" style="font-size:4em;"></i>
+          <h4>Find your Cottage</h4> 
+          <p>Looking for a cottage in a specific region? Have a strict budget? Search by location and price to find your ideal holiday home. All homes listed will be period cottages in rural areas.</p>
+        </div>
+        <div class= "col-md-6" style="margin-top: 50px;">
+          <i class="glyphicon glyphicon-cloud" style="font-size:4em;"></i>
+          <h4>Check the Local Weather</h4>
+           <p>Need some sun? Excited about snow? Discover the weather patterns near your cottage.</p>
+        </div>
+       <!--  <div class= "col-md-4" style="margin-top: 50px;">
+          <i class="glyphicon glyphicon-map-marker" style="font-size:4em;"></i>
+          <h4>Find Local Destinations</h4>
+          <p>How far will your holiday cottage be from a vegetarian restaurant? Where is the nearest donkey rescue center? How about an ice rink for your figure skating daughter? Search for the things you just can't live without.</p>
+        </div> -->
+  </div>
+
+ <br />
+ <br />
+  <div class = "row text-center" id="results">
+    <div class= "col-md=12" style= "margin-top: 50px">
+    </div>
+  </div>
+  <div class = "row text-center">
+    <img class = "ad" src="powered-by-zoopla.png" alt="mandatory zoopla icon"/>
+  </div>
+
+</div>
+
+<script src="jsonp.js"></script>
+<script src="cottageapp.js"></script>
+
+ 
+</body>
+
+</html>
+
